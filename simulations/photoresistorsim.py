@@ -29,13 +29,14 @@ print("Table of expected voltage for a given resistor and the resistance")
 print("at a certain light exposure (in Ohm):")
 print("")
 
-s="~ \\ R\t"
+s="~ \\ R\t\t"
 for r in resistor:
     s+=str(r)+"\t"
 print(s)
+print("")
 
 for m in measurement:
-    s=str(m) + "\t"
+    s=str(m) + "\t\t"
     for r in resistor:
         s+=str(measure(m,r)) + "\t"
     print(s)
