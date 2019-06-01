@@ -14,28 +14,28 @@ measurement=[2000000, 1000000, 600000, 200000, 100000, 80000, 40000, 20000, 1000
 def measure(r,p):
     return round(voltage/(r+p)*r,4)
 
-print ""
-print "Table of expected voltage for a given resistor and light exposure"
-print "-----------------------------------------------------------------"
-print ""
-print "Setup:"
-print " -----[R]---+--(~)---- 5V"
-print " |          |"
-print " = 0V      {?}"
-print "            |"
-print "            = 0V"
-print ""
+print("")
+print("Table of expected voltage for a given resistor and light exposure")
+print("-----------------------------------------------------------------")
+print("")
+print("Setup:")
+print(" -----[R]---+--(~)---- 5V")
+print(" |          |")
+print(" = 0V      {?}")
+print("            |")
+print("            = 0V")
+print("")
 
 s="~ \\ R\t"
 for r in resistor:
     s+=str(r)+"\t"
-print s
+print(s)
 
 for m in measurement:
     s=str(m) + "\t"
     for r in resistor:
         s+=str(measure(m,r)) + "\t"
-    print s
+    print(s)
 
 
 
