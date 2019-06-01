@@ -12,7 +12,7 @@ resistor=[59,180,220,453,750,1000,10000,20000]
 measurement=[2000000, 1000000, 600000, 200000, 100000, 80000, 40000, 20000, 10000, 8000, 6000, 4000, 2000, 1000, 800, 600, 400, 200, 100, 80, 60, 40, 20, 8, 2]
 
 def measure(r,p):
-    return round(voltage/(r+p)*r,4)
+    return round(voltage-(voltage/(r+p)*r),4)
 
 print("")
 print("Photoresistor Simulation")
