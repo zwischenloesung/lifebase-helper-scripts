@@ -15,8 +15,8 @@ def measure(r,p):
     return round(voltage/(r+p)*r,4)
 
 print("")
-print("Table of expected voltage for a given resistor and light exposure")
-print("-----------------------------------------------------------------")
+print("Photoresistor Simulation")
+print("------------------------")
 print("")
 print("Setup:")
 print(" -----[R]---+--(~)---- 5V")
@@ -24,6 +24,9 @@ print(" |          |")
 print(" = 0V      {?}")
 print("            |")
 print("            = 0V")
+print("")
+print("Table of expected voltage for a given resistor and the resistance")
+print("at a certain light exposure (in Ohm):")
 print("")
 
 s="~ \\ R\t"
